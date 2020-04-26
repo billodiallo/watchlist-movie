@@ -1,11 +1,11 @@
-from app import create_app,db
+from app import create_app
 from flask_script import Manager, Server
-from flask_migrate import Migrate, MigrateCommand
-from app.models import User,Role,Review
+#from flask_migrate import Migrate, MigrateCommand
+#from app.models import User,Role,Review
 #from werkzeug import secure_filename
-from werkzeug.utils import secure_filename
+#from werkzeug.utils import secure_filename
 # Creating the app instance
-app = create_app('production')
+app = create_app('development')
 
 
 #migrate = Migrate(app,db)
