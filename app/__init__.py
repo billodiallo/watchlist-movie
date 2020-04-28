@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
-11111111111111
+
 def create_app(config_name):
 
     app = Flask(__name__)
