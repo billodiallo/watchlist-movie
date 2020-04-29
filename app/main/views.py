@@ -3,6 +3,7 @@ from . import main
 from ..requests import get_movies,get_movie,search_movie
 from .forms import ReviewForm
 from ..models import Review
+from flask_login import login_required
 Review = Review
 #views
 @main.route('/')
@@ -26,7 +27,8 @@ def index():
     else:
         return render_template('index.html', title = title, popular = popular_movies, upcoming = upcoming_movie, now_showing = now_showing_movie )
 
-@main.route('/movie/<int:id>')
+@main.route('/movie/<int:id>',methods = ['GET','POST'])
+@login_required
 def movie(id):
 
     '''
