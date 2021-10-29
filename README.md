@@ -4,30 +4,7 @@
 
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
-## Screenshot
-<img src="./docs/scree.JPG" width="40%" height="auto" />
 
-# TEST
-<img src="./docs/test.JPG" width="100%" height="auto" />
-
-## Live Demo 
-
-[Clic here](https://calculator-machine.herokuapp.com/)
-## Built With
-
-- [JavaScript ES6](https://www.javascript.com/) 
-- [React](https://reactjs.org/)
-- [create-react-app](https://github.com/facebook/create-react-app)
-- HTML and CSS
-- [NPM](https://www.npmjs.com/)
-- ESLint
-- StyleLint
-
-## Packages
-- [BigJS](https://github.com/MikeMcl/big.js/)
-- [PropTypes](https://www.npmjs.com/package/prop-types)
-
-## Prerequisities
 
 To get this project up and running locally, you must follow the steps from the [getting started section](#getting-started).
 
@@ -37,20 +14,27 @@ To get this project up and running locally, you must follow the steps from the [
 
 **Step 1**<br>
 Navigate through the local folder where you want to clone the repository and run<br>
-git clone `https://github.com/billodiallo/Calculator.git`. It will clone the repo to your local folder.<br>
+git clone `https://github.com/billodiallo/watchlist-movie.git`. It will clone the repo to your local folder.<br>
 
 **Step 2**<br>
 - Cd inside the project
 
-- run npm install
 
 ### Run project 
 
-`` npm run start ``
+ To run the application, in your terminal:
 
-open ```localhost:3000``` in browser. 
+        $ chmod +x start.sh
+        $ ./start.sh
 
+## Testing the Application
+* To run the tests for the class files:
 
+        $ python3.6 manage.py test
+
+## Technologies Used
+* Python3.6
+* Flask
 
 ## 🤝 contributing
 
