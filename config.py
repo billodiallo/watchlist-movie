@@ -1,11 +1,15 @@
 import os
 
+from flask import redirect,url_for,render_template
+
+
+
 class Config:
 
     MOVIE_API_BASE_URL ='https://api.themoviedb.org/3/movie/{}?api_key={}'
     MOVIE_API_KEY = os.environ.get('MOVIE_API_KEY')
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://billo:123456@localhost/watchlist'
+    SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://billo:1234567890@localhost/watchlist1'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
@@ -16,7 +20,7 @@ class Config:
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
 
-    # @auth.route('/register',methods = ["GET","POST"])
+# @auth.route('/register',methods = ["GET","POST"])
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
@@ -35,7 +39,7 @@ class ProdConfig(Config):
     pass
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://billo:123456@localhost/watchlist_test'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://billo:1234567890@localhost/watchlist1_test'
 
 
 class DevConfig(Config):
